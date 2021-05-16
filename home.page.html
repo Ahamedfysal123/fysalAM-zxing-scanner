@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-avatar slot="start">
+            <img src="/assets/icon/qr1.png">
+        </ion-avatar>
+        <ion-title>
+            QR Code Reader
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="scanReadModalPage()">
+                <ion-icon name="scan"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <div id="container">
+        <ion-text>
+            <h5>TEXT : Store the plain text</h5>
+        </ion-text>
+        <ion-text>
+            <h5>URL : Store the Url</h5>
+        </ion-text>
+        <ion-text>
+            <h5>ACTION : Store the info about actions</h5>
+        </ion-text>
+        <ion-text>
+            <h5>CONTACT : Store the contact information</h5>
+        </ion-text>
+    </div>
+</ion-content>
